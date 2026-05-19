@@ -1,11 +1,9 @@
 vcpkg_from_github(
     OUT_SOURCE_PATH SOURCE_PATH
-    REPO quickfix/quickfix
-    REF v${VERSION}
-    SHA512 fbd45940334ea4d9f6e1f4164b0dfc0f509bd75689aa39b80ab5303b9be4f2123428e71d967f46bc5bc47ae1a521180af5ba7b619daff5f835c3dfb6dec03d50
+    REPO sweemer/quickfix
+    REF 42e853ba526cc2143b6cab55ce5d9c20b5967745
+    SHA512 3862a40324697fcf11c64d8e256ebb3d7da3334c6b08ef311d5c85820390f87c261f37d8cf38bc3899598f9b780afb88037fa1e0eea057cd09c3f9fe2be6a2f5
     HEAD_REF master
-    PATCHES
-        00001-fix-build.patch
 )
 
 string(COMPARE EQUAL "${VCPKG_LIBRARY_LINKAGE}" "dynamic" QUICKFIX_SHARED_LIBS)
